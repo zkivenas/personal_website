@@ -1,0 +1,15 @@
+.header {
+    text-align: center;
+    margin: 0 0 40px;
+}
+.body-text {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+    text-align: center;
+}
+.thanks {
+    display: block;
+    margin: 20px;
+}
