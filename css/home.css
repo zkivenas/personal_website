@@ -1,6 +1,7 @@
 .bio-box {
-  background-color: rgb(218, 218, 218);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #000;
+  border-radius: 10px;
   box-shadow: 5px 5px 10px #000;
   line-height: 1.5em;
   margin: 30px auto;
@@ -21,4 +22,25 @@
 }
 .bio-box p {
   text-align: center;
+}
+.profile-pic {
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #000;
+  margin-bottom: 20px;
+  width: 200px;
+}
+.updates-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #000;
+  line-height: 1.5em;
+  margin: 10vh auto;
+  max-width: 40vw;
+  padding: 20px;
+  text-align: center;
+}
+.updates-box p {
+  
 }

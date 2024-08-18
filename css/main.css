@@ -1,8 +1,7 @@
 /* Global Styles*/
 html {
     background-color: #fff;
-    box-shadow: 0 0 0 30px #000 inset;
-    padding: 30px;
+    font-family: Helvetica, Arial, Sans-Serif;
 }
 .name {
     box-sizing: border-box;
@@ -33,14 +32,16 @@ html {
     padding: 5px 0;
 }
 .nav-links > li a {
-    border: 2px dotted #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
     color: #fff;
     padding: 5px 20px;
+    
 }
 .nav-links > li a:hover,
 .nav-links > li a:active {
     background-color: #005;
-    border: 2px dotted #f00;
+    border: 1px solid #f00;
 }
 
 
@@ -59,6 +60,7 @@ html {
 .header-name {
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 .header-nav {
     float: right;
@@ -69,7 +71,11 @@ html {
 .header-nav > li {
     margin: 5px 0;
 }
-
+.header-comp {
+    background-color: #000;
+    height: 40px;
+    width: 100%;
+}
 /* Footer Styles */
 .footer {
     background-color: #000;
@@ -88,12 +94,13 @@ html {
 }
 
 /* Hero Styles */
-.full-hero {
-    height: 75vh;
-    overflow: hidden;
+.invis-hero {
+    border: 1 solid #000;
+    height: 80vh;
+    display: block;
 }
 .hero-image {
-    position: relative;
-    width: 100%;
-    z-index: 0;
+    position: fixed;
+    height: 100%;
+    z-index: -20;
 }
