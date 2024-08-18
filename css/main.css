@@ -1,52 +1,99 @@
 /* Global Styles*/
 html {
     background-color: #fff;
-    margin: 0;
-    padding: 0;
+    box-shadow: 0 0 0 30px #000 inset;
+    padding: 30px;
 }
-body {
-    margin: 0;
-    padding: 0;
+.name {
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    height: 1em;
+    width: 8.1em;
 }
-header {
-    font-size: 3.5vh;
-    
+.name h1 > span:hover,
+.name h1 > span:active {
+    color:#f00;
 }
-header h3 {
-    margin: 0;
+.name h1 > span + span:hover,
+.name h1 > span + span:active {
+    color: #009;
 }
-h1 {
-    margin: 0;
+
+/* Nav Styles */
+.nav-links {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-links > li {
+    display: inline-block;
+    padding: 5px 0;
+}
+.nav-links > li a {
+    border: 2px dotted #fff;
+    color: #fff;
+    padding: 5px 20px;
+}
+.nav-links > li a:hover,
+.nav-links > li a:active {
+    background-color: #005;
+    border: 2px dotted #f00;
+}
+
+
+/* Header Styles */
+.header {
+    background-color: #000;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+.header a {
+    text-decoration: none;
+}
+.header-name {
+    overflow: hidden;
+    position: relative;
+}
+.header-nav {
+    float: right;
+}
+.header-nav:last-child {
+    margin-right: 60px;
+}
+.header-nav > li {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    height: 10vh;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer-name {
+    margin: 0.5em auto;
+}
+.footer-nav-pos {
+    display: block;
+    margin: 0 auto;
 }
 
 /* Hero Styles */
 .full-hero {
-    background-color: #07f;
-    height:25vh;
+    height: 75vh;
+    overflow: hidden;
 }
-
-/* Body Styles*/
-.body-text {
-    background-color: #ddd;
-    border: .5em solid #000;
-    font-size: 1.2em;
-    margin: .5em auto;
-    padding: .5em;
-    text-align: center;
-    width: 50vw;
-}
-.thanks {
-    display: block;
-    margin: 20px;
-}
-.bio-box {
-    border: 2px solid #000;
-    box-sizing: border-box;
-    float: left;
-    overflow: scroll;
-    width: 33.33333%;
-    height: 60vh;
-}
-.objective {
-    border: 2px solid #000;
+.hero-image {
+    position: relative;
+    width: 100%;
+    z-index: 0;
 }
